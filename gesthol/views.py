@@ -37,7 +37,7 @@ def register (request):
 
     return Response (serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GETS'])
+@api_view(['GET'])
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def profile (request):

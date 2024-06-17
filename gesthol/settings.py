@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-t=_3ucb+mp8sx^+2(b&z3nw79^&zj^vn)g-5f%@81mf*i-j@o6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gesthol-render.onrender.com']
+ALLOWED_HOSTS = ['gesthol-render.onrender.com','127.0.0.1']
 
 
 
