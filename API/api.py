@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 @authentication_classes([TokenAuthentication])
 class ReservaViewSet (viewsets.ModelViewSet):
     queryset = Reserva.objects.all()
-    permission_classes = [IsAdminUser] #PROVICIONAL
+    permission_classes = [IsAuthenticated] #PROVICIONAL
     serializer_class = ReservaSerializer
 
 @authentication_classes([TokenAuthentication])
