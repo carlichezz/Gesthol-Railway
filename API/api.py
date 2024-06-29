@@ -21,5 +21,5 @@ class ActividadViewSet (viewsets.ModelViewSet):
 @authentication_classes([TokenAuthentication])
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAuthenticated]
     serializer_class = UserSerializer
