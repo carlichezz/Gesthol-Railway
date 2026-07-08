@@ -29,27 +29,27 @@ Hotel reservation and activity management REST API, built with Django 5 and Djan
 | GET    | `/profile`    | View current user (auth)   |
 | GET    | `/logout`     | Delete auth token (auth)   |
 
-### Reservas (auth required)
+### Reservations (auth required)
 
-| Method | Endpoint                 | Description           |
-| ------ | ------------------------ | --------------------- |
-| GET    | `/api/reservas/`         | List all reservations |
-| POST   | `/api/reservas/`         | Create a reservation  |
-| GET    | `/api/reservas/{id}/`    | Retrieve a reservation |
-| PUT    | `/api/reservas/{id}/`    | Update a reservation  |
-| PATCH  | `/api/reservas/{id}/`    | Partial update        |
-| DELETE | `/api/reservas/{id}/`    | Delete a reservation  |
+| Method | Endpoint                       | Description            |
+| ------ | ------------------------------ | ---------------------- |
+| GET    | `/api/reservations/`           | List all reservations  |
+| POST   | `/api/reservations/`           | Create a reservation   |
+| GET    | `/api/reservations/{id}/`      | Retrieve a reservation |
+| PUT    | `/api/reservations/{id}/`      | Update a reservation   |
+| PATCH  | `/api/reservations/{id}/`      | Partial update         |
+| DELETE | `/api/reservations/{id}/`      | Delete a reservation   |
 
-### Actividades (read-only public, write auth)
+### Activities (read-only public, write auth)
 
 | Method | Endpoint                   | Description         |
 | ------ | -------------------------- | ------------------- |
-| GET    | `/api/actividades/`         | List all activities |
-| POST   | `/api/actividades/`         | Create an activity  |
-| GET    | `/api/actividades/{id}/`    | Retrieve an activity |
-| PUT    | `/api/actividades/{id}/`    | Update an activity  |
-| PATCH  | `/api/actividades/{id}/`    | Partial update      |
-| DELETE | `/api/actividades/{id}/`    | Delete an activity  |
+| GET    | `/api/activities/`         | List all activities |
+| POST   | `/api/activities/`         | Create an activity  |
+| GET    | `/api/activities/{id}/`    | Retrieve an activity |
+| PUT    | `/api/activities/{id}/`    | Update an activity  |
+| PATCH  | `/api/activities/{id}/`    | Partial update      |
+| DELETE | `/api/activities/{id}/`    | Delete an activity  |
 
 ### Users (auth required)
 
